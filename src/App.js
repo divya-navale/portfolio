@@ -1,16 +1,22 @@
-// src/App.js
 import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ResumePage from './components/ResumePage';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import SubFooter from './components/SubFooter';
+// import HomePage from './components/HomePage'; // Replace with your homepage
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <Header />
-      <ResumePage />
+      <Routes>
+        {/* <Route path="/" element={<HomePage />} /> */}
+        <Route path="/resume" element={<ResumePage />} />
+      </Routes>
+      <SubFooter/>
       <Footer />
-    </div>
+    </Router>
   );
 };
 

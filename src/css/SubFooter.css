@@ -1,0 +1,22 @@
+/* src/css/SubFooter.css */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+}
+
+.resume-link {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.resume-link:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=SubFooter.css.map */
