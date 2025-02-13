@@ -1,0 +1,78 @@
+/* src/css/ResumePage.css */
+
+/* Container for the whole page */
+.resume-page-container {
+    display: flex;
+    justify-content: space-between; /* Distribute left and right sections */
+    gap: 30px;
+    padding: 40px;
+  }
+  
+  /* Left section with title, text, and buttons */
+  .left-section {
+    width: 40%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+  }
+  
+  .resume-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: underline; /* Underline the title */
+  }
+  
+  .resume-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .linkedin-button {
+    background-color: #0077b5;
+    color: white;
+  }
+  
+  .github-button {
+    background-color: #333;
+    color: white;
+  }
+  
+  .social-button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Right section for PDF viewer */
+  .right-section {
+    width: 55%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Make the PDF view responsive */
+  .right-section iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
