@@ -73,11 +73,16 @@
   text-decoration: none;
 }
 
-.close-button {
+.close-btn {
+  position: absolute;
+  top: 1%;
+  right: 16%;
   color: white;
   font-size: 30px;
   cursor: pointer;
+}
+
+.x-icon {
   font-weight: bold;
   font-size: 30px;
-  border-radius: 50%;
 }/*# sourceMappingURL=Header.css.map */

@@ -45,8 +45,11 @@ const Header = () => {
                 <Nav.Link onClick={() => scrollToSection(aboutRef)}>About</Nav.Link>
                 <Nav.Link onClick={() => scrollToSection(projectsRef)}>Projects</Nav.Link>
                 <Nav.Link onClick={() => scrollToSection(contactRef)}>Contact</Nav.Link>
-                <Nav.Link onClick={toggleMenu} className='close-button'>X</Nav.Link>
               </Nav>
+
+            <div className="close-btn" onClick={toggleMenu}>
+                <span className="x-icon">X</span>
+            </div>
             </div>
           </div>
         )}
