@@ -1,0 +1,56 @@
+.main-content {
+  padding: 20px;
+}
+
+.welcome-row {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.welcome-row h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.about-projects-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.about-projects-row .about-section, .about-projects-row .projects-section {
+  padding: 20px;
+  text-align: center;
+}
+.about-projects-row .about-section h2, .about-projects-row .projects-section h2 {
+  font-size: 1.8rem;
+  margin: 0;
+  transition: color 0.3s;
+}
+.about-projects-row .about-section h2:hover, .about-projects-row .projects-section h2:hover {
+  color: #007bff;
+}
+.about-projects-row .about-section {
+  width: 35%;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+.about-projects-row .projects-section {
+  width: 65%;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
+
+.experience-row {
+  text-align: center;
+}
+.experience-row h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.experience-row h2:hover {
+  background-color: #0056b3;
+}/*# sourceMappingURL=MainPage.css.map */
