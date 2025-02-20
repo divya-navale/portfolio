@@ -11,7 +11,7 @@ const ResumePage = () => {
       </div>
 
       <div className="right-section">
-        <object data={pdfFile} type="application/pdf" width="100%" height="600px">
+        <object data={pdfFile} type="application/pdf" width="100%" height="700px">
           <p>Your browser does not support PDFs. <a href={pdfFile}>Download the PDF</a>.</p>
         </object>
       </div>
