@@ -1,56 +1,68 @@
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .main-content {
-  padding: 20px;
+  background-image: url("../assets/ocean.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+  overflow: hidden;
+}
+
+.welcome-row, .about-projects-row, .experience-row {
+  flex-grow: 1;
 }
 
 .welcome-row {
+  background-color: rgba(14, 32, 84, 0.6);
+  color: white;
   text-align: center;
-  margin-bottom: 50px;
-}
-.welcome-row h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
+  padding: 30px 0;
+  height: 70vh;
+  z-index: 30;
 }
 
 .about-projects-row {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
-.about-projects-row .about-section, .about-projects-row .projects-section {
-  padding: 20px;
-  text-align: center;
-}
-.about-projects-row .about-section h2, .about-projects-row .projects-section h2 {
-  font-size: 1.8rem;
-  margin: 0;
-  transition: color 0.3s;
-}
-.about-projects-row .about-section h2:hover, .about-projects-row .projects-section h2:hover {
-  color: #007bff;
+  height: 50vh;
 }
 .about-projects-row .about-section {
-  width: 35%;
-  background-color: #f0f0f0;
-  border-radius: 8px;
+  background-color: #092478;
+  opacity: 0.6;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
 }
 .about-projects-row .projects-section {
-  width: 65%;
-  background-color: #e0e0e0;
-  border-radius: 8px;
+  background-color: #113cbc;
+  opacity: 0.6;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
 }
 
 .experience-row {
-  text-align: center;
-}
-.experience-row h2 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  background-color: #007bff;
+  background-color: #2e75e6;
+  opacity: 0.6;
   color: white;
-  padding: 15px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.experience-row h2:hover {
-  background-color: #0056b3;
+  text-align: center;
+  padding: 30px 0;
+  height: 30vh;
 }/*# sourceMappingURL=MainPage.css.map */

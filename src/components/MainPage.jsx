@@ -1,36 +1,44 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useRef } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import '../css/MainPage.css';
+import Welcome from './Welcome';
 
 const MainPage = () => {
+  // Refs for scrolling to sections
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const experienceRef = useRef(null);
+
   return (
-    <div className="main-content">
-      {/* Row 1: Welcome text */}
-      <div className="row welcome-row">
-        <h1>Welcome to My Portfolio</h1>
-      </div>
+    <Container className="main-content">
+      <Row className="welcome-row" ref={homeRef}>
+        <Col>
+          <Welcome />
+        </Col>
+      </Row>
 
-      {/* Row 2: About Me and Projects */}
-      <div className="row about-projects-row">
-        <div className="about-section">
+      <Row className="about-projects-row" ref={aboutRef}>
+        <Col md={4} className="about-section">
           <h2>
-            <Link to="/about">About Me</Link>
+            <a href="#about">About Me</a>
           </h2>
-        </div>
-        <div className="projects-section">
+        </Col>
+        <Col md={8} className="projects-section" ref={projectsRef}>
           <h2>
-            <Link to="/projects">Projects</Link>
+            <a href="#projects">Projects</a>
           </h2>
-        </div>
-      </div>
+        </Col>
+      </Row>
 
-      {/* Row 3: Experience */}
-      <div className="row experience-row">
-        <h2>
-          <Link to="/experience">Experience</Link>
-        </h2>
-      </div>
-    </div>
+      <Row className="experience-row" ref={experienceRef}>
+        <Col>
+          <h2>
+            <a href="#experience">Experience</a>
+          </h2>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

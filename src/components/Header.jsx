@@ -1,6 +1,6 @@
-// src/components/Header.js
 import React, { useState, useRef } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import '../css/Header.css';
 
 const Header = () => {
@@ -10,7 +10,7 @@ const Header = () => {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
-  const contactRef = useRef(null);
+  const experienceRef = useRef(null);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -24,8 +24,8 @@ const Header = () => {
     <header>
       <Navbar expand="lg" className="navbar-container">
         <Container>
-          <Navbar.Brand href="#home" className="portfolio-title">
-            DIVYA NAVALE'S PORTFOLIO
+          <Navbar.Brand>
+            <Link to="/" className="portfolio-title">DIVYA NAVALE'S PORTFOLIO</Link>
           </Navbar.Brand>
 
           {/* Hamburger Menu */}
@@ -44,7 +44,7 @@ const Header = () => {
                 <Nav.Link onClick={() => scrollToSection(homeRef)}>Home</Nav.Link>
                 <Nav.Link onClick={() => scrollToSection(aboutRef)}>About</Nav.Link>
                 <Nav.Link onClick={() => scrollToSection(projectsRef)}>Projects</Nav.Link>
-                <Nav.Link onClick={() => scrollToSection(contactRef)}>Contact</Nav.Link>
+                <Nav.Link onClick={() => scrollToSection(experienceRef)}>Experience</Nav.Link>
               </Nav>
 
             <div className="close-btn" onClick={toggleMenu}>
@@ -54,19 +54,6 @@ const Header = () => {
           </div>
         )}
       </Navbar>
-
-      <div ref={homeRef} style={{ height: '100vh', backgroundColor: 'lightblue' }}>
-        Home Section
-      </div>
-      <div ref={aboutRef} style={{ height: '100vh', backgroundColor: 'lightgreen' }}>
-        About Section
-      </div>
-      <div ref={projectsRef} style={{ height: '100vh', backgroundColor: 'lightyellow' }}>
-        Projects Section
-      </div>
-      <div ref={contactRef} style={{ height: '100vh', backgroundColor: 'lightcoral' }}>
-        Contact Section
-      </div>
     </header>
   );
 };

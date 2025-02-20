@@ -1,0 +1,45 @@
+.welcome-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section {
+    background: transparent;
+    color: white;
+    .hi{
+        font-size: 4rem;
+        font-weight: bolder;
+    }
+    .underline{
+        margin-top: -4%;
+    }
+    .description{
+        font-size: 1.5rem;
+        font-weight:normal;
+    }
+}
+
+.right-section {
+    background: transparent;
+    .sea-image{
+        background: transparent;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 1000;
+        border-radius: 50%;
+        height: 60vh;
+        width: 60vh;
+    }
+}
+
+.right-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
