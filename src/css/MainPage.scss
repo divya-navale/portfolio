@@ -19,6 +19,46 @@
   padding: 0 !important;
   max-width: 100% !important;
   overflow: hidden;
+
+  .section-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 10px 20px;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+     a {
+      text-decoration: none;
+      color: white;
+      position: relative;
+      display: inline-block;
+    
+      &:hover {
+        color: #f0f0f0;
+      }
+    
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #f0f0f0; 
+        transition: width 0.3s ease-out;
+      }
+    
+      &:hover::after {
+        width: 100%;
+      }
+    }
+    
+  }
 }
 
 .welcome-row, .about-projects-row, .experience-row {
@@ -26,8 +66,6 @@
 }
 
 .welcome-row {
-  // background-color: #0e2054;
-  // opacity: 0.6;
   background-color: rgba(14, 32, 84, 0.6);
   color: white;
   text-align: center;
@@ -40,31 +78,30 @@
   height: 50vh;
   
   .about-section {
-    background-color: #092478;
-    opacity: 0.6;
+    background-color: rgba(9, 36, 120, 0.6);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     text-align: center;
+    padding: 20px;
   }
 
   .projects-section {
-    background-color: #113cbc;
-    opacity: 0.6;
+    background-color: rgba(17, 60, 188, 0.6);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     text-align: center;
+    padding: 20px;
   }
 }
 
 .experience-row {
-  background-color: #2e75e6;
-  opacity: 0.6;
+  background-color:rgba(46, 117, 230, 0.6);
   color: white;
   text-align: center;
   padding: 30px 0;

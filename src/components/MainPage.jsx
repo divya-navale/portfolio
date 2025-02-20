@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../css/MainPage.css';
 import Welcome from './Welcome';
-import Projects from './Projects';
 import { Link } from 'react-router-dom';
 
 const MainPage = () => {
