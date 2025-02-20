@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../css/MainPage.css';
 import Welcome from './Welcome';
+import Projects from './Projects';
+import { Link } from 'react-router-dom';
 
 const MainPage = () => {
   // Refs for scrolling to sections
@@ -26,7 +28,9 @@ const MainPage = () => {
         </Col>
         <Col md={8} className="projects-section" ref={projectsRef}>
           <h2>
-            <a href="#projects">Projects</a>
+            <Link to="/projects" className="projects-link">
+              Projects
+            </Link>
           </h2>
         </Col>
       </Row>
