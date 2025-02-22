@@ -1,7 +1,7 @@
-// src/components/Footer.js
 import React from 'react';
-import { FaGithub, FaInstagram, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa'; // Import icons
-import '../css/Footer.css'; // Import footer styles
+import { FaGithub, FaInstagram, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { SiLeetcode } from "react-icons/si";
+import '../css/Footer.css';
 
 const Footer = () => {
   return (
@@ -22,6 +22,9 @@ const Footer = () => {
             </a>
             <a href="https://www.linkedin.com/in/divyanavale" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={30} />
+            </a>
+            <a href="https://leetcode.com/u/divya_n/" target="_blank" rel="noopener noreferrer">
+              <SiLeetcode size={30} />
             </a>
           </div>
         </div>

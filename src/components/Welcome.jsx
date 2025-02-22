@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap'; // Import React-Bootstrap components
-import '../css/Welcome.css'; // Import custom SCSS file for styling
+import { Container, Row, Col } from 'react-bootstrap';
+import '../css/Welcome.css';
 import sea from '../assets/photo.jpeg';
 const Welcome = () => {
   return (

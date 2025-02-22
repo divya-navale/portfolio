@@ -1,25 +1,20 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../css/MainPage.css';
 import Welcome from './Welcome';
 import { Link } from 'react-router-dom';
 
 const MainPage = () => {
-  // Refs for scrolling to sections
-  const homeRef = useRef(null);
-  const aboutRef = useRef(null);
-  const projectsRef = useRef(null);
-  const experienceRef = useRef(null);
 
   return (
     <Container className="main-content">
-      <Row className="welcome-row" ref={homeRef}>
+      <Row className="welcome-row">
         <Col>
           <Welcome />
         </Col>
       </Row>
 
-      <Row className="about-projects-row" ref={aboutRef}>
+      <Row className="about-projects-row">
         <Col md={4} className="about-section">
           <h2 className='section-title'>
             <Link to="/about-me" className="about-link">
@@ -27,7 +22,8 @@ const MainPage = () => {
             </Link>
           </h2>
         </Col>
-        <Col md={8} className="projects-section" ref={projectsRef}>
+
+        <Col md={8} className="projects-section">
           <h2 className='section-title'>
             <Link to="/projects" className="projects-link">
               Projects
@@ -36,7 +32,7 @@ const MainPage = () => {
         </Col>
       </Row>
 
-      <Row className="experience-row" ref={experienceRef}>
+      <Row className="experience-row">
         <Col>
           <h2 className='section-title'>
             <Link to="/experience" className="experience-link">

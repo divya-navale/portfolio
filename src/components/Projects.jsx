@@ -1,8 +1,7 @@
 import React from 'react';
 import projects from '../data/projects.jsx';
 import '../css/Projects.css';
-import { Container, Row, Col } from 'react-bootstrap'; // Import React-Bootstrap components
-
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Projects = () => {
     return (

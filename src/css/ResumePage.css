@@ -67,6 +67,7 @@
   padding: 20px;
   background-color: #f7f7f7;
   border-radius: 10px;
+  overflow: auto;
 }
 
 /* Make the PDF view responsive */

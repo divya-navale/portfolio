@@ -5,19 +5,10 @@ import '../css/Header.css';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  // Refs for scrolling to sections
-  const homeRef = useRef(null);
-  const aboutRef = useRef(null);
-  const projectsRef = useRef(null);
-  const experienceRef = useRef(null);
-
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
-  // Scroll to section and close menu
-  const scrollToSection = (section) => {
-    section.current.scrollIntoView({ behavior: 'smooth' });
-    setMenuOpen(false); // Close the menu after clicking a link
+  const scrollToSection = () => {
+    setMenuOpen(false);
   };
 
   return (
@@ -41,10 +32,12 @@ const Header = () => {
           <div className="fullscreen-menu">
             <div className="menu-content">
               <Nav className="menu-items">
-                <Nav.Link onClick={() => scrollToSection(homeRef)}>Home</Nav.Link>
-                <Nav.Link onClick={() => scrollToSection(aboutRef)}>About</Nav.Link>
-                <Nav.Link onClick={() => scrollToSection(projectsRef)}>Projects</Nav.Link>
-                <Nav.Link onClick={() => scrollToSection(experienceRef)}>Experience</Nav.Link>
+                <Link to="/" onClick={() => scrollToSection()} className="portfolio-title">Home</Link>
+                <Link to="/about-me" onClick={() => scrollToSection()} className="portfolio-title">About</Link>
+                <Link to="/projects" onClick={() => scrollToSection()} className="portfolio-title">Projects</Link>
+                <Link to="/experience" onClick={() => scrollToSection()} className="portfolio-title">Experience</Link>
+                <Link to="/resume" onClick={() => scrollToSection()} className="portfolio-title">Resume</Link>
+                <Link to="/" onClick={() => scrollToSection()} className="portfolio-title">Contact</Link>
               </Nav>
 
             <div className="close-btn" onClick={toggleMenu}>
