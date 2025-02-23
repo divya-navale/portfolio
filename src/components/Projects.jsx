@@ -11,8 +11,8 @@ const Projects = () => {
                 <p className="underline"></p>
                 <p className="project-description">
                     Below are some of the key projects I’ve worked on, showcasing my
-                    experience across various technical stacks. For more, feel free to visit my{' '}
-                    <a href="https://github.com/divya-navale">Github</a>
+                    experience across various technical stacks. For more, feel free to visit my <br/>
+                    <a href="https://github.com/divya-navale" target="_blank" rel="noopener noreferrer" className="button">Github</a>
                 </p>
             </Col>
             <Col className="projects-row">
