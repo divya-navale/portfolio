@@ -26,6 +26,26 @@ const Projects = () => {
                         <div className="project-info">
                             <h2>{project.title}</h2>
                             <p>{project.description}</p>
+                            <div className='project-buttons'>
+                                {project.link &&
+                                    <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="button"
+                                >
+                                    Try Project
+                                </a>}
+                                {project.github &&
+                                    <a
+                                    href={project.github}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="button"
+                                >
+                                    Github
+                                </a>}
+                            </div>
                         </div>
                     </Row>
                 ))}
