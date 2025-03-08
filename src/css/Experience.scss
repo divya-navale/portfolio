@@ -1,0 +1,43 @@
+/* Optional: Remove all timeline controls and nav */
+.chrono__header,
+.chrono__controls {
+  display: none !important;
+}
+
+/* Timeline container styling */
+.timeline-container {
+  width: 70%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+/* Card styling */
+.chrono__card {
+  padding: 20px;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Card title and subtitle adjustments */
+.chrono__card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.chrono__card-subtitle {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* Ensure cards are spaced out */
+.chrono__timeline {
+  padding: 20px 0;
+}
+
+/* Hide the timeline controls and any unnecessary navigation */
+.chrono__header, 
+.chrono__controls,
+.chrono__jump-to,
+.chrono__search {
+  display: none !important;
+}
