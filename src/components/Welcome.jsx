@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../css/Welcome.css';
-import sea from '../assets/photo.jpeg';
+import photo from '../assets/photo.jpeg';
 const Welcome = () => {
   return (
     <Container>
@@ -14,7 +14,7 @@ const Welcome = () => {
           </div>
         </Col>
         <Col className='right-section'>
-            <img src={sea} alt='sea' className='sea-image'/>
+            <img src={photo} alt='sea' className='sea-image'/>
         </Col>
       </Row>
     </Container>

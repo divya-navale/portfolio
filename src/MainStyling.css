@@ -1,0 +1,11 @@
+.container-title-design {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  max-width: 100% !important;
+  min-height: 100vh;
+  overflow: hidden;
+  color: white;
+  padding: 0 !important;
+  margin: 0 !important;
+}/*# sourceMappingURL=MainStyling.css.map */

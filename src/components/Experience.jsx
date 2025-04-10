@@ -8,7 +8,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 const Experience = () => {
     return (
         // https://codesandbox.io/p/sandbox/react-vertical-timeline-goty8
-        <Container className="projects-container">
+        <Container className="projects-container container-title-design">
             <Col className="project-heading">
                 <h1 className="heading">Experience</h1>
                 <p className="underline"></p>

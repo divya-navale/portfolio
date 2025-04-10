@@ -37,7 +37,7 @@ const Header = () => {
                 <Link to="/projects" onClick={() => scrollToSection()} className="portfolio-title">Projects</Link>
                 <Link to="/experience" onClick={() => scrollToSection()} className="portfolio-title">Experience</Link>
                 <Link to="/resume" onClick={() => scrollToSection()} className="portfolio-title">Resume</Link>
-                <Link to="/" onClick={() => scrollToSection()} className="portfolio-title">Contact</Link>
+                <Link to="/contact" onClick={() => scrollToSection()} className="portfolio-title">Contact Me</Link>
               </Nav>
 
             <div className="close-btn" onClick={toggleMenu}>

@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const Projects = () => {
     return (
-        <Container className="projects-container">
+        <Container className="projects-container container-title-design">
             <Col className="project-heading">
                 <h1 className="heading">Projects</h1>
                 <p className="underline"></p>

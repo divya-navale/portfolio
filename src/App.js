@@ -8,6 +8,8 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import MainPage from './components/MainPage';
+import ContactUs from './components/ContactUs';
+import './MainStyling.css';
 
 const App = () => {
   return (
@@ -19,6 +21,7 @@ const App = () => {
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<Experience />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
       <SubFooter />
       <Footer />
