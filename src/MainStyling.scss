@@ -8,4 +8,23 @@
     color: white;
     padding: 0 !important;
     margin: 0 !important;
-}
+  
+    .title-row {
+      margin: 0 !important;
+  
+      .title-heading {
+        width: 100%;
+        margin: 0 !important;
+        background-color: rgba(124, 114, 171, 0.8);
+        padding: 60px 70px; 
+  
+        .heading {
+          font-size: 3rem;
+          font-weight: bolder;
+          text-align: left;
+          margin: 0;
+        }
+      }
+    }
+  }
+  

@@ -4,14 +4,15 @@ import ats from '../assets/ats.png';
 import campusmart from '../assets/campusmart.png';
 const projects = [
     {
+        image: transactify,
+        title: "TRANSACTIFY",
+        link: 'https://sites.library.pfw.edu/statistics/collections-data',
+        description: "The Library Transactify project is a full-stack application built with React.js, Express.js, and MySQL, designed to help the Library Director visualize student usage of library services. The challenge was to merge data from two different sources: the library's own website and a third-party API from Springshare. I integrated both data sources, processed and combined the information, and created a graphical representation for easier visualization during meetings. This solution allowed the director to efficiently access and present library usage data, overcoming the difficulty of managing and displaying data from disparate systems."
+    },
+    {
         image: illiad,
         title: "ILLIAD DATAHUB",
         description: "I built a full-stack application using React, Express.js, and MySQL to streamline student data management from large Excel files. I created an automated script to load the data into the database, enabling users to retrieve student details via Purdue name or student ID number. Access was restricted to authorized personnel, ensuring data security. I also deployed the system, optimizing performance to achieve a response time of under 1 second, improving data retrieval efficiency and management."
-    },
-    {
-        image: transactify,
-        title: "TRANSACTIFY",
-        description: "The Library Transactify project is a full-stack application built with React.js, Express.js, and MySQL, designed to help the Library Director visualize student usage of library services. The challenge was to merge data from two different sources: the library's own website and a third-party API from Springshare. I integrated both data sources, processed and combined the information, and created a graphical representation for easier visualization during meetings. This solution allowed the director to efficiently access and present library usage data, overcoming the difficulty of managing and displaying data from disparate systems."
     },
     {
         image: ats,

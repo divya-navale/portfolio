@@ -1,43 +1,80 @@
-/* Optional: Remove all timeline controls and nav */
-.chrono__header,
-.chrono__controls {
-  display: none !important;
+.experience-container {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  z-index: 1;
 }
 
-/* Timeline container styling */
-.timeline-container {
-  width: 70%;
-  margin: auto;
+.experience-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3; /* Adjust fade level */
+  z-index: 0;
+}
+
+/* Make the timeline line black */
+.vertical-timeline::before {
+  background: black !important;
+}
+
+/* Ensure content sits above the faded bg */
+.experience-section,
+.timeline-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.experience-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-/* Card styling */
-.chrono__card {
-  padding: 20px;
-  background-color: #f4f4f4;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.timeline-wrapper {
+  width: 80%;
+  max-width: 1000px;
 }
 
-/* Card title and subtitle adjustments */
-.chrono__card-title {
-  font-size: 1.2rem;
+.vertical-timeline-element-title {
+  color: #007bff;
   font-weight: bold;
 }
 
-.chrono__card-subtitle {
-  font-size: 1rem;
-  font-style: italic;
+.vertical-timeline-element-subtitle {
+  color: #333;
+  margin-bottom: 10px;
 }
 
-/* Ensure cards are spaced out */
-.chrono__timeline {
-  padding: 20px 0;
+.vertical-timeline-element-content {
+  background: #f4f4f4 !important;
+  color: #333 !important;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Hide the timeline controls and any unnecessary navigation */
-.chrono__header,
-.chrono__controls,
-.chrono__jump-to,
-.chrono__search {
-  display: none !important;
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid #130d0d !important;
+}
+
+.timeline-image {
+  width: 100%;
+  max-height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: 10px;
+}
+
+.timeline-description {
+  margin-top: 10px;
+  color: #333;
+  line-height: 1.5;
 }/*# sourceMappingURL=Experience.css.map */
