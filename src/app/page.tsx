@@ -131,7 +131,7 @@ export default function Page() {
             </div>
           </BlurFade>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {DATA.projects.map((project, id) => (
+            {DATA.projects.filter((project) => project.active).map((project, id) => (
               <BlurFade
                 key={project.title}
                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}
@@ -150,6 +150,16 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <div className="text-center">
+              <Link
+                href="/projects"
+                className="text-sm font-medium text-blue-500 hover:underline"
+              >
+                See all past projects →
+              </Link>
+            </div>
+          </BlurFade>
         </div>
       </section>
       {/* <section id="hackathons">

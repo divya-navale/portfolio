@@ -8,13 +8,12 @@ export const DATA = {
   location: "Indiana, USA",
   locationLink: "https://www.google.com/maps/place/indiana",
   description:
-    "Software Engineer. I love building things.",
+    "Software Engineer | Full-Stack Developer",
   summary:
-    "Full-stack software engineer with 5 years of experience designing and building scalable web applications using React, Node.js, and cloud platforms. Skilled in API development, system design, and CI/CD automation. Currently pursuing a [Master’s in Computer Science at Purdue University](/#education), where I develop internal tools to streamline data workflows and enhance operational efficiency. Passionate about writing clean, maintainable code and continuously learning emerging technologies.",
-    // "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "I'm a full-stack software engineer with 5 years of experience building production-ready web applications that drive operational efficiency and data visibility. Currently pursuing a Master’s in Computer Science at Purdue University, I lead the development of internal tools using React, Node.js, and MySQL-delivering scalable solutions used daily by faculty and library leadership. Previously at Sureify, I built client-facing platforms and automated deployment pipelines across cloud environments. I thrive in ownership-driven roles and bring a strong focus on clean architecture, reliability, and user-centered design.",
+  // "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
   avatarUrl: "/me.jpeg",
   skills: [
-    "Angular",
     "AWS",
     "Bitbucket",
     "C++",
@@ -55,6 +54,8 @@ export const DATA = {
     "PDF Generation",
     "IIS",
     "CI/CD",
+    "Google Analytics",
+    "Google Tag Manager",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -139,55 +140,120 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Application Directory Webpage",
-      href: "https://www.pfw.edu/digitalhumanities", // Replace with actual link if available
-      dates: "Aug 2025",
+      title: "SemEval 2026 - Machine-Generated Code Detection",
+      href: "",
+      dates: "Oct 2025 – Present",
       active: true,
       description:
-        "Designed and deployed a static HTML/CSS webpage f or Purdue’s Digital Arts & Humanities Lab to showcase all internal applications. Focused on simplicity and maintainability for non-technical staff. Hosted on an internal IIS server to improve tool discoverability.",
+        "Contributing to SemEval-2026 Task 13 (Subtask 1), focused on detecting machine-generated code across diverse programming languages and generator families. Building a binary classification model to distinguish fully human-written from fully machine-generated code snippets. Addresses generalization challenges in modern code generation techniques using NLP and code analysis strategies.",
       technologies: [
-        "HTML5",
-        "CSS",
-        "Internet Information Services (IIS)"
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://tools.library.pfw.edu/illiad-datahub-app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        { 
-          type: "Source", 
-          href: "https://tools.library.pfw.edu/illiad-datahub-app/",
-          icon: <Icons.github className="size-3" />,
-        }
-      ],
-      image: "", // Add image link if applicable
-      video: "",
-    },
-    {
-      title: "Purdue FindingAid",
-      href: "", // Add link if available
-      dates: "Jun 2025 - Jul 2025",
-      active: true,
-      description:
-        "Built a full-stack archival management tool for Purdue Libraries with role-based CRUD for admin users and advanced hierarchical filtering (Collection → Box → Folder). Designed an intuitive interface for librarians and deployed on IIS.",
-      technologies: [
-        "React.js",
-        "Express.js",
-        "MySQL",
-        "Internet Information Services (IIS)",
-        "API Integration",
+        "Python",
+        "Machine Learning",
+        "NLP",
+        "Data Analysis",
       ],
       links: [],
       image: "",
       video: "",
     },
     {
-      title: "Visit Tracker Application",
-      href: "", // Add link if available
-      dates: "May 2025",
+      title: "AI-Powered Outfit Recommendation System",
+      href: "",
+      dates: "Oct 2025 – Present",
       active: true,
+      description:
+        "Building a deep learning-based outfit recommendation system for Purdue’s Career Development Center, designed to assist students in selecting professional attire from the Career Closet. The tool analyzes skin tone to generate personalized color palettes (warm, cool, or deep), then recommends clothing items that match the user’s palette. Designed to enhance styling confidence and streamline decisions through an interactive UI connected to a smart backend API and wardrobe inventory.",
+      technologies: [
+        "Python",
+        "React.js",
+        "Next.js",
+        "Node.js",
+        "Deep Learning",
+      ],
+      links: [],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Library Google Analytics Dashboard",
+      href: "https://library.pfw.edu/",
+      dates: "Sep 2025 - Oct 2025",
+      active: true,
+      description:
+        "Developed a Google Analytics dashboard to monitor user interactions across the Purdue Library site. Configured custom tags, triggers, and variables for key pages and buttons, including tracking for Writing Center access and database searches across Helmke, All Databases, and Purdue systems. Created categorized visual data using custom charts for library leadership insights.",
+      technologies: [
+        "Google Analytics 4",
+        "Google Tag Manager",
+        "JavaScript",
+        "Custom Variables & Events"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://library.pfw.edu/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+
+      image: "/libraryAnalytics.png",
+      video: "",
+    },
+    {
+      title: "Digital Arts Application Directory",
+      href: "https://tools.library.pfw.edu/DigitalLabsLinks/homepage.html",
+      dates: "Aug 2025",
+      active: false,
+      description:
+        "Designed and deployed a static HTML/CSS webpage for Purdue’s Digital Arts & Humanities Lab to showcase all internal applications. Focused on simplicity and maintainability for non-technical staff. Hosted on an internal IIS server to improve tool discoverability.",
+      technologies: [
+        "HTML5",
+        "CSS",
+        "IIS Server"
+      ],
+      links: [
+        // {
+        //   type: "Website",
+        //   href: "https://tools.library.pfw.edu/DigitalLabsLinks/homepage.html",
+        //   icon: <Icons.globe className="size-3" />,
+        // },
+        // { 
+        //   type: "Source", 
+        //   href: "https://tools.library.pfw.edu/DigitalLabsLinks/homepage.html",
+        //   icon: <Icons.github className="size-3" />,
+        // }
+      ],
+      image: "/ApplicationDirectoryWebpage.png",
+      video: "",
+    },
+    {
+      title: "FindingAid",
+      href: "https://sites.library.pfw.edu/findingaid-app/",
+      dates: "Jun 2025 - Jul 2025",
+      active: false,
+      description:
+        "Built a full-stack archival management tool for Purdue Libraries with role-based CRUD for admin users and advanced hierarchical filtering (Collection → Box → Folder). Designed an intuitive interface for librarians and deployed on IIS.",
+      technologies: [
+        "React.js",
+        "Express.js",
+        "MySQL",
+        "IIS Server",
+        "API Integration",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://sites.library.pfw.edu/findingaid-app/",
+          icon: <Icons.globe className="size-3" />,
+        }
+      ],
+      image: "/findingAid.png",
+      video: "",
+    },
+    {
+      title: "Visit Tracker",
+      href: "https://tools.library.pfw.edu/dahlab-visit-app/",
+      dates: "May 2025",
+      active: false,
       description:
         "Developed a lightweight app for tracking visitor activity in Purdue’s Digital Arts & Humanities Lab. Logged individual and class visits with a simple frontend and stored data in MySQL for integration with a statistics dashboard.",
       technologies: [
@@ -196,10 +262,10 @@ export const DATA = {
         "Express.js",
         "MySQL",
         "CSS",
-        "Internet Information Services (IIS)",
+        "IIS Server",
       ],
       links: [],
-      image: "",
+      image: "/visitTracker.png",
       video: "",
     },
     {
@@ -215,17 +281,25 @@ export const DATA = {
         "MySQL",
         "Node.js",
         "API Integration",
-        "Internet Information Services (IIS)"
+        "IIS Server",
+        "Chart.js",
+        "SASS"
       ],
-      links: [],
-      image: "",
+      links: [
+        {
+          type: "Website",
+          href: "https://sites.library.pfw.edu/statistics/collections-data",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/statistics.png",
       video: "",
     },
     {
       title: "Illiad DataHub",
       href: "https://tools.library.pfw.edu/illiad-datahub-app/",
       dates: "Jan 2025",
-      active: true,
+      active: false,
       description:
         "Created a secure full-stack system to manage large Excel-based student datasets for Purdue Library. Implemented fast (<1s) search by name or ID and deployed on IIS. Included automated ETL scripts and access control.",
       technologies: [
@@ -234,23 +308,17 @@ export const DATA = {
         "Node.js",
         "MySQL",
         "SASS",
-        "Internet Information Services (IIS)"
+        "IIS Server",
       ],
-      links: [
-        {
-          type: "Website",
-          href: "https://tools.library.pfw.edu/illiad-datahub-app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
+      links: [],
+      image: "/illiad.png",
       video: "",
     },
     {
-      title: "Purdue ATS",
-      href: "", // Add link if available
+      title: "Attendance Tracker",
+      href: "https://attendance-tracking-weba-f327c.web.app/login",
       dates: "Sep 2024 - Dec 2024",
-      active: true,
+      active: false,
       description:
         "Built an attendance tracking system for Professor Amar Khalifa’s lectures. Restricted to authorized users, with real-time updates via Firebase and a mobile-friendly UI built in React Native.",
       technologies: [
@@ -259,16 +327,29 @@ export const DATA = {
         "Firebase Realtime DB",
         "Cloud Firestore",
         "Material-UI",
+        "Firebase Auth",
+        "Firebase Hosting"
       ],
-      links: [],
-      image: "",
+      links: [
+        {
+          type: "Website",
+          href: "https://attendance-tracking-weba-f327c.web.app/login",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Taleef7/PFW-AttendanceTrackingWebApp/",
+          icon: <Icons.github className="size-3" />,
+        }
+      ],
+      image: "/attendancetracker.png",
       video: "",
     },
     {
       title: "CampusMart",
-      href: "", // Add link if available
+      href: "https://campusmart-purdue.vercel.app",
       dates: "Oct 2024 - Nov 2024",
-      active: true,
+      active: false,
       description:
         "Built a centralized marketplace platform for international students to buy/sell items easily, solving cluttered chat issues in WhatsApp groups. Included notifications, wishlist, secure auth, image uploads (Cloudinary), and separate user dashboards.",
       technologies: [
@@ -283,8 +364,24 @@ export const DATA = {
         "Jest",
         "Cypress"
       ],
-      links: [],
-      image: "",
+      links: [
+        {
+          type: "Website",
+          href: "https://campusmart-purdue.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Frontend Source",
+          href: "https://github.com/divya-navale/campusMart.App",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Backend Source",
+          href: "https://github.com/divya-navale/campusMart.Api",
+          icon: <Icons.github className="size-3" />,
+        }
+      ],
+      image: "/campusMart.png",
       video: "",
     }
   ]
