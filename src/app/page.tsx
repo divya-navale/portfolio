@@ -102,13 +102,24 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
-          <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
+
+          {DATA.skills.map((group, categoryIndex) => (
+            <div key={group.category} className="mb-4">
+              <BlurFade delay={BLUR_FADE_DELAY * 10 + categoryIndex * 0.1}>
+                <h3 className="text-md font-semibold capitalize mb-1">{group.category}</h3>
               </BlurFade>
-            ))}
-          </div>
+              <div className="flex flex-wrap gap-1">
+                {group.items.map((skill, skillIndex) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 10 + categoryIndex * 0.1 + skillIndex * 0.02}
+                  >
+                    <Badge>{skill}</Badge>
+                  </BlurFade>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
       <section id="projects">
@@ -123,8 +134,7 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
+                  I&apos;ve worked on a variety of projects. Here are a few of my
                   favorites.
                 </p>
               </div>

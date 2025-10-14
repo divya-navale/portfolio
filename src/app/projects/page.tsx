@@ -18,7 +18,7 @@ export default function AllProjectsPage() {
             Explore My Previous Work
           </h1>
           <p className="text-muted-foreground max-w-2xl md:text-xl">
-            Here’s a list of projects I’ve worked on before. They may be complete, paused, or retired—but each one taught me something.
+            Here’s a list of projects I’ve worked on before.
           </p>
         </div>
       </BlurFade>

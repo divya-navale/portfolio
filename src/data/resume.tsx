@@ -10,52 +10,46 @@ export const DATA = {
   description:
     "Software Engineer | Full-Stack Developer",
   summary:
-    "I'm a full-stack software engineer with 5 years of experience building production-ready web applications that drive operational efficiency and data visibility. Currently pursuing a Master’s in Computer Science at Purdue University, I lead the development of internal tools using React, Node.js, and MySQL-delivering scalable solutions used daily by faculty and library leadership. Previously at Sureify, I built client-facing platforms and automated deployment pipelines across cloud environments. I thrive in ownership-driven roles and bring a strong focus on clean architecture, reliability, and user-centered design.",
+    "I'm a full-stack software engineer with 5 years of experience building production-ready web applications that accelerate workflows and automate complex processes. Currently pursuing a Master’s in Computer Science at Purdue University, I lead the development of internal tools using React, Node.js, and MySQL-delivering scalable solutions used daily by faculty and library leadership. Previously at Sureify, I built client-facing platforms and automated deployment pipelines across cloud environments. I thrive in ownership-driven roles and bring a strong focus on clean architecture, reliability, and user-centered design.",
   // "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
   avatarUrl: "/me.jpeg",
   skills: [
-    "AWS",
-    "Bitbucket",
-    "C++",
-    "CSS",
-    "Docker",
-    "Firebase",
-    "Git",
-    "Github",
-    "Go",
-    "Google Cloud",
-    "HTML",
-    "Java",
-    "JavaScript",
-    "Jenkins",
-    "MongoDB",
-    "MUI",
-    "MySQL",
-    "Next.js",
-    "Node.js",
-    "Postgres",
-    "Python",
-    "React",
-    "Redis",
-    "REST APIs",
-    "TailwindCSS",
-    "Typescript",
-    "Kubernetes",
-    "Express.js",
-    "SASS",
-    "Jest",
-    "Cypress",
-    "Cloudinary",
-    "SendGrid",
-    "JWT",
-    "Semantic Release",
-    "DocuSign",
-    "XML",
-    "PDF Generation",
-    "IIS",
-    "CI/CD",
-    "Google Analytics",
-    "Google Tag Manager",
+    {
+      category: "Languages & Frameworks",
+      items: [
+        "JavaScript", "TypeScript", "Python", "Java", "C++", "Go",
+        "React", "Next.js", "Node.js", "Express.js", "HTML", "CSS",
+        "TailwindCSS", "MUI", "SASS"
+      ]
+    },
+    {
+      category: "DevOps & Cloud",
+      items: [
+        "AWS", "Google Cloud", "Firebase", "Docker", "Kubernetes",
+        "CI/CD", "Jenkins", "Bitbucket", "Git", "Github", "Internet Information Services (IIS)"
+      ]
+    },
+    {
+      category: "Databases & Testing",
+      items: [
+        "MySQL", "Postgres", "MongoDB", "Redis",
+        "Jest", "Cypress"
+      ]
+    },
+    {
+      category: "Tools & Analytics",
+      items: [
+        "REST APIs", "JWT", "Cloudinary", "SendGrid",
+        "Semantic Release", "DocuSign", "XML", "PDF Generation",
+        "Google Analytics", "Google Tag Manager"
+      ]
+    },
+    {
+      category: "AI & Machine Learning",
+      items: [
+        "Machine Learning", "Deep Learning", "NLP", "Data Analysis", "pandas", "NumPy", "scikit-learn", "TensorFlow", "Keras"
+      ]
+    }
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -102,10 +96,10 @@ export const DATA = {
       location: "On-site",
       title: "Software Engineer",
       logoUrl: "/purdue.png",
-      start: "October 2021",
+      start: "October 2024",
       end: "Present",
       description:
-        "Built 5+ full-stack apps with React, Node.js, and MySQL for internal data workflows. Automated Excel processing and API integrations (e.g. Springshare). Deployed secure admin portals on IIS/Windows Server. Maintained 5+ production systems with 100% uptime, managing features, bugs, and stakeholder feedback.",
+        "Designed and developed over 5 full-stack applications using React, Node.js, and MySQL to streamline internal data workflows, reporting, and student engagement tracking. Automated processing of more than 10,000 Excel records and integrated third-party APIs like Springshare, reducing data retrieval time to under one second and improving reporting accuracy. Created secure, role-based admin portals with advanced search and filtering features to manage over 2,000 archival items, deploying solutions on IIS/Windows Server for internal staff use. As the sole developer responsible for multiple production systems, I ensure 100% uptime while promptly addressing bugs, implementing feature enhancements, and incorporating stakeholder feedback to continuously improve operational efficiency.",
     },
     {
       company: "Sureify",
@@ -117,7 +111,7 @@ export const DATA = {
       start: "Dec 2020",
       end: "Aug 2024",
       description:
-        "Built four client-facing demo products that secured new deals and increased revenue. Developed REST APIs and integrated third-party services. Automated deployments via CI/CD using Semantic Release, Docker, and Jenkins. Streamlined document workflows with DocuSign and dynamic PDF/XML generation. Managed secrets with AWS Secrets Manager and data storage via S3. Deployed code to client-aligned demo environments. Documented workflows and POCs in Confluence.",
+        "Led development of four tailored client demo platforms that helped secure key enterprise deals, driving an increase in company's revenue. Built and deployed REST APIs with third-party integrations, automated deployments via CI/CD pipelines using Docker, Jenkins, and Semantic Release, and created dynamic PDF/XML mapping and DocuSign workflows to streamline data capture. Secured infrastructure with AWS Secrets Manager and S3, and collaborated cross-functionally with DevOps and product teams to deliver stable, client-aligned demo environments.",
     },
   ],
   education: [
@@ -134,7 +128,7 @@ export const DATA = {
       href: "https://www.osmania.ac.in/",
       degree: "Bachelor's Degree of Computer Science",
       logoUrl: "/osmania.png",
-      start: "2016",
+      start: "2017",
       end: "2021",
     },
   ],
